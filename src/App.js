@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import CounterClass from './CounterClass';
+import CounterFunction from './CounterFunction';
+import './App.css'; // Import CSS for header and footer
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header className="app-header">
+        <h1>React Counter App</h1>
       </header>
+      <main className="app-main">
+        <CounterClass />
+        <CounterFunction />
+      </main>
+      <footer className="app-footer">
+        <p>&copy; 2025 React Counter Project. All rights reserved.</p>
+      </footer>
     </div>
   );
 }
